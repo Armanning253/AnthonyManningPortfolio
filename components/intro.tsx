@@ -48,7 +48,7 @@ export default function Intro() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ type: "spring", duration: 0.5 }}
             >
-                <span className="font-bold">Hello, I'm Tony.</span> I'm a{" "}
+                <span className="font-bold">Hello, I&apos;m Tony.</span> I&apos;m a{" "}
                 <span className="font-bold">front end software developer </span> .I have a wide range of knowledge in the web development ecosystem. A keen mind for problem solving with good teamwork and communication skills. <span className="italic">Motivated developer</span>. My focus is{" "}
                 <span className="underline">React (Next.js)</span>.
             </motion.h1>
