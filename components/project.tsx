@@ -7,7 +7,9 @@ import { motion, useScroll, useTransform } from 'framer-motion'
 
 type ProjectProps = (typeof projectsData)[number];
 
-export default function Project({ title, description, gitHubLink, liveLink, tags, imageUrl }: ProjectProps) {
+export default function Project({ title, description,
+    /* gitHubLink, liveLink, */ // ! comment out links 
+    tags, imageUrl }: ProjectProps) {
     const ref = useRef<HTMLDivElement>(null);
     const { scrollYProgress } = useScroll({
         target: ref,
@@ -34,15 +36,15 @@ export default function Project({ title, description, gitHubLink, liveLink, tags
                     <div className='flex justify-center gap-2 my-6'>
                         <button
                             className='bg-gray-900 text-white px-9 py-2 items-center rounded-full outline-none focus:scale-105 hover:scale-105 transition'>
-                            <a href={gitHubLink} target='_blank' >
+                            {/* <a href={gitHubLink} target='_blank' >
                                 GitHub
-                            </a>
+                            </a> */} // ! comment out link
                         </button>
                         <button
                             className='bg-white dark:bg-gray-100 border-2  text-black/70 px-9 py-2  rounded-full focus:scale-105 hover:scale-105 transition'>
-                            <a href={liveLink} target='_blank' >
+                            {/* <a href={liveLink} target='_blank' >
                                 Live
-                            </a>
+                            </a> */} // ! comment out link
                         </button>
                     </div>
 
